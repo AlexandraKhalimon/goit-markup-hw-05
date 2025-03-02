@@ -556,13 +556,18 @@ img {
     height: 40px;
     background-color: transparent;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #ffffff;
 }
 
 .footer-email::placeholder {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    color: #fff;
+    color: #ffffff;
 }
 
 .footer-btn {
@@ -573,7 +578,7 @@ img {
     align-items: center;
     border-radius: 4px;
     padding: 8px 24px;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
 
     border: none;
@@ -597,7 +602,7 @@ img {
 
 .footer-email-icon {
     fill: #fff;
-    /* margin-left: 16px; */
+    margin-left: 16px;
 }
 
 /* #endregion Footer */
@@ -738,12 +743,10 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .modal-input:hover, */
 .modal-input:focus {
-    border-color: 1px solid #4d5ae5;
+    border: 1px solid #4d5ae5;
 }
 
-/* .modal-input:hover, */
 .modal-input:focus + .modal-form-icon {
     fill:#4d5ae5;
 }
@@ -753,15 +756,15 @@ img {
     min-height: 138px;
 }
 
-.modal-label {
+/* .modal-label {
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
 
     display: block;
     margin-bottom: 4px;
-}
+} */
 
 .comment-container {
     margin-bottom: 16px;
@@ -785,9 +788,8 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .modal-comment:hover, */
 .modal-comment:focus {
-    border-color: 1px solid #4d5ae5;
+    border: 1px solid #4d5ae5;
 }
 
 .modal-comment::placeholder {
