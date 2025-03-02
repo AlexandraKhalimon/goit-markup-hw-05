@@ -47,6 +47,7 @@
         </address>
       </div>
     </header>
+
     <main>
       <!-- #region Hero -->
       <section class="section-hero">
@@ -417,6 +418,8 @@
       </section>
       <!-- #endregion Portfolio -->
     </main>
+
+    <!-- #region Footer -->
     <footer class="page-footer">
       <div class="container footer-container">
         <div class="footer-info">
@@ -463,7 +466,7 @@
         </div>
         <div class="subscribe">
           <p class="subscribe-text">Subscribe</p>
-          <div class="footer-email-container">
+          <form class="footer-subscribe-form">
             <label for="user-email"></label>
             <input
               class="footer-email"
@@ -477,15 +480,17 @@
                 <use href="./images/icons.svg#icon-telegram"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
 
+    <!-- #endregion Footer -->
+
     <!-- #region Modal -->
     <div class="backdrop is-open">
       <div class="modal">
-        <button class="modal-close">
+        <button class="modal-close" type="button">
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-btn"></use>
           </svg>
@@ -503,7 +508,7 @@
                 type="text"
                 required
               />
-              <svg class="modal-form-icon" width="12" height="12">
+              <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -519,7 +524,7 @@
                 type="tel"
                 required
               />
-              <svg class="modal-form-icon" width="13" height="13">
+              <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
@@ -535,7 +540,7 @@
                 type="email"
                 required
               />
-              <svg class="modal-form-icon" width="15" height="12">
+              <svg class="modal-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
@@ -555,15 +560,17 @@
             <input
               class="modal-checkbox visually-hidden"
               type="checkbox"
-              id="user-checkbox"
+              id="user-privacy"
+              value="true"
+              name="user-privacy"
             />
-            <label class="label-checkbox" for="user-checkbox"
+            <label class="label-checkbox" for="user-privacy"
               ><span class="custom-checkbox">
                 <svg class="" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg> </span
               >I accept the terms and conditions of the
-              <a href="">Privacy Policy</a></label
+              <a class="label-checkbox-link" href="">Privacy Policy</a></label
             >
           </div>
           <button class="modal-btn" type="submit">Send</button>
