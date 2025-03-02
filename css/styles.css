@@ -678,7 +678,10 @@ img {
     border: none;
 }
 
-.modal-close:focus,
+.modal-close:focus .modal-close-icon {
+    fill: #fff;
+}
+
 .modal-close:hover .modal-close-icon {
     fill: #fff;
 }
@@ -698,7 +701,6 @@ img {
 }
 
 .modal-label {
-    font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
@@ -736,13 +738,13 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:hover,
+/* .modal-input:hover, */
 .modal-input:focus {
     border-color: 1px solid #4d5ae5;
 }
 
-.modal-input:focus,
-.modal-input:hover + .modal-form-icon {
+/* .modal-input:hover, */
+.modal-input:focus + .modal-form-icon {
     fill:#4d5ae5;
 }
 
@@ -783,8 +785,8 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-comment:focus,
-.modal-comment:hover {
+/* .modal-comment:hover, */
+.modal-comment:focus {
     border-color: 1px solid #4d5ae5;
 }
 
