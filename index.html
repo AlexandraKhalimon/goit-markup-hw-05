@@ -472,12 +472,10 @@
               placeholder="E-mail"
             />
             <button class="footer-btn" type="submit" name="user-email">
-              <div class="footer-btn-container">
-                <p class="footer-btn-text">Subscribe</p>
-                <svg class="footer-email-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-telegram"></use>
-                </svg>
-              </div>
+              Subscribe
+              <svg class="footer-email-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
             </button>
           </div>
         </div>
@@ -543,16 +541,32 @@
             </div>
           </div>
 
-          <div class="modal-comment-block">
-            <label class="modal-label" for="modal-comment">Comment</label>
+          <div class="comment-container">
+            <label class="modal-label" for="user-comment">Comment</label>
             <textarea
               placeholder="Text input"
-              class="modal-comment"
               name="user-comment"
-              id="modal-comment"
-            >
-            </textarea>
+              id="user-comment"
+              class="modal-comment"
+            ></textarea>
           </div>
+
+          <div class="modal-container-checkbox">
+            <input
+              class="modal-checkbox visually-hidden"
+              type="checkbox"
+              id="user-checkbox"
+            />
+            <label class="label-checkbox" for="user-checkbox"
+              ><span class="custom-checkbox">
+                <svg class="" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg> </span
+              >I accept the terms and conditions of the
+              <a href="">Privacy Policy</a></label
+            >
+          </div>
+          <button class="modal-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
